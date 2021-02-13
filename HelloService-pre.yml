@@ -1,0 +1,32 @@
+server:
+  servlet:
+    context-path: /hello-config-client
+  port: 9091
+  
+#Spring application properties
+spring:
+  application:
+    name: HelloService
+  profiles:
+    active: pre
+ 
+  #1. Agregar dependencias para Spring Cloud bus
+  #2. Agregar configuracion para RabbitMQ
+  
+  rabbitmq:
+    host: 10.100.100.10
+    addresses: 10.100.100.10:5672
+    port: 5672
+    username: guest
+    password: guest
+    
+management:
+  endpoints:
+    web: 
+      exposure:
+        include: bus-refresh,bus-env
+guest: guest
+
+hello.message=Hi hello service pre from git! (pre) (CHANGED!!!! con YML en git***)
+
+
