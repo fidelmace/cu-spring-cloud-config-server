@@ -26,7 +26,8 @@ management:
       exposure:
         include: bus-refresh,bus-env
 guest: guest
-
-hello.message=Hi hello service pre from git! (pre) (CHANGED!!!! con YML en git***)
+hello:
+  message: Hi hello service pre from git! (pre) (CHANGED!!!! con YML en git***)
+#hello.message=Hi hello service pre from git! (pre) (CHANGED!!!! con YML en git***)
 
 
